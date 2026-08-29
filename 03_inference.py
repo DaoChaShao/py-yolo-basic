@@ -16,19 +16,25 @@ from ultralytics import YOLO
 @validate_call
 def load_pretrained_model(
         model_type: Annotated[
-            Literal["yolo26n.pt", "yolo26s.pt",],
+            Union[str, Literal["yolo26n.pt", "yolo26s.pt", "yolo26m.pt", "yolo26l.pt", "yolo26x.pt"]],
             Field(default="yolo26n.pt", description="The type of YOLO model to load")
         ] = "yolo26n.pt",
         *,
+        task_type: Annotated[
+            Union[str, Literal["classify", "depth", "detect", "obb", "pose", "segment", "semantic"]],
+            Field(default="detect", description="The task type")
+        ] = "detect",
         display: bool = False
 ) -> YOLO:
     """
     Load a pretrained YOLO model
+
     :param model_type: The type of YOLO model to load
+    :param task_type: The task type
     :param display: Whether to display the model information
     :return: The loaded YOLO model
     """
-    model: YOLO = YOLO(model_type)
+    model: YOLO = YOLO(model_type, task=task_type)
     if display: print(model)
     return model
 
@@ -42,6 +48,7 @@ def print_detective_results(
 ) -> None:
     """
     Print detective results
+
     :param results: The results of the YOLO model
     :param names: The names of the classes
     :param display: Whether to display the results
@@ -65,7 +72,7 @@ def inference_item(
         model: Annotated[Any, Field(description="The YOLO model to use for inference")],
         item: Annotated[Union[str, Path], Field(description="The item to perform inference on")],
         *,
-        confidence: Annotated[float, Field(default=0.75, ge=0.25, lt=1.0)] = 0.75,
+        confidence: Annotated[float, Field(default=0.75, ge=0.25, lt=1.0)] = 0.50,
         is_save: bool = True,
         overwrite: bool = True,
         is_live: bool = False,
@@ -73,13 +80,15 @@ def inference_item(
 ) -> None:
     """
     Perform inference with a YOLO model on an image, a video, or a folder of images
+
     :param model: The YOLO model to use for inference
-    :param item: The image, video, or folder of images to perform inference on
+    :param item: The image, video, screen, 0 (camera) or folder of images to perform inference on
     :param confidence: The confidence threshold for the detections
     :param is_save: Whether to save the inference results
     :param overwrite: Whether to overwrite the existing results
     :param is_live: Whether to perform inference in live mode
     :param display: Whether to display the inference results
+    :return: None
     """
     results: Any = model.predict(
         source=item,
