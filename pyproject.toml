@@ -1,0 +1,32 @@
+[project]
+name = "py-yolo-basic"
+version = "0.1.0"
+description = "A basic YOLO implementation in Python"
+authors = [{ name = "Shawn" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.git-changelog]
+bump = "auto"
+convention = "conventional"
+in-place = false
+filter-commits = ""
+marker-line = "<!-- insertion marker for GitHub -->"
+output = "CHANGELOG.md"
+parse-refs = true
+parse-trailers = true
+provider = "github"
+repository = "."
+sections = ["feat", "fix", "chore", "docs", "perf", "build", "refactor", "test", "deps"]
+template = "angular"
+version-regex = "^## \\[(?P<version>v?[^\\]]+)"
+versioning = "semver"
+zerover = false
+
+[dependency-groups]
+dev = [
+    "black>=26.5.1",
+    "git-changelog>=2.9.7",
+    "ruff>=0.16.5",
+]
