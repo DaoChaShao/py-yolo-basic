@@ -1,10 +1,23 @@
 <!-- insertion marker -->
-<a name="0.0.1"></a>
+<a name="0.1.0"></a>
 
-## [0.0.1](https://github.com/DaoChaShao/py-yolo-basic/compare/2110d39b054d7591c11d175eb63448286e672a4b...0.0.1) (2026-08-29)
+## [0.1.0](https://github.com/DaoChaShao/py-yolo-basic/compare/2110d39b054d7591c11d175eb63448286e672a4b...0.1.0) (2026-08-29)
+
+### Features
+
+- add uv.lock file ([8fb62c6](https://github.com/DaoChaShao/py-yolo-basic/commit/8fb62c6db6c111bbd739f88e93b64895ffa7df35))
+- **project:** add pydantic and ultralytics dependencies ([7bdaebc](https://github.com/DaoChaShao/py-yolo-basic/commit/7bdaebc686663e2d46b981a5f15ee6f76447ee1c))
+- add example.png file for text ([951aeca](https://github.com/DaoChaShao/py-yolo-basic/commit/951aeca09aca574da1601e99f6b7a6b479abb451))
+- **yolo:** add YOLO inference module with model loading and detection capabilities ([d7035e9](https://github.com/DaoChaShao/py-yolo-basic/commit/d7035e9f144539f6ec759bc6b9907b53ed813cb8))
+- **model:** add pretrained YOLO model loading functionality ([480912f](https://github.com/DaoChaShao/py-yolo-basic/commit/480912f07caa0359a7119a502599ff9d4d5c1340))
+- **yolo:** add YOLO and Torch status checking utility ([0cf6a77](https://github.com/DaoChaShao/py-yolo-basic/commit/0cf6a773bfce4ac9430c652acb7e5692d4cc0a97))
 
 ### Chore
 
+- **data:** add .gitignore file for Python project ([f1266a3](https://github.com/DaoChaShao/py-yolo-basic/commit/f1266a3bf241fcb2a73f379f1bfaa9ff07f74f5f))
+- **inferences:** add .gitignore for Python project ([e3cdb9a](https://github.com/DaoChaShao/py-yolo-basic/commit/e3cdb9a1cda02bea1e69d9694a06a50d4830e6bc))
+- **images:** add gitignore for python project assets ([8661d97](https://github.com/DaoChaShao/py-yolo-basic/commit/8661d97542078fb7aac157d62bcdb0c0087dd24c))
+- **project:** initialize project with dependencies and documentation ([d5cb047](https://github.com/DaoChaShao/py-yolo-basic/commit/d5cb0472d69e55772307fb1bb92bd43ab720a6f6))
 - **deps:** add uv lock file with project dependencies ([5b7b220](https://github.com/DaoChaShao/py-yolo-basic/commit/5b7b22017861545ab35debe852b89ef7fff42c60))
 - **project:** initialize pyproject.toml with project metadata and dependencies ([21864a4](https://github.com/DaoChaShao/py-yolo-basic/commit/21864a47dfd4bee4ccf3f3870dd8ad4e9ec10f82))
 - **env:** add python version file ([84a3e6e](https://github.com/DaoChaShao/py-yolo-basic/commit/84a3e6e53dba1e5048f7eb6a57f6df0fcba17490))
