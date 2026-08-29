@@ -5,6 +5,8 @@
 
 ### Features
 
+- **inference:** enhance YOLO model loading with task type support and extended model options ([b3e9054](https://github.com/DaoChaShao/py-yolo-basic/commit/b3e90543b29c587c101af56279f5e198d12ea316))
+- **project:** initialize YOLO basic project with core dependencies ([6010a19](https://github.com/DaoChaShao/py-yolo-basic/commit/6010a193c28ce44cc13e077ade01e422b8493d14))
 - add uv.lock file ([8fb62c6](https://github.com/DaoChaShao/py-yolo-basic/commit/8fb62c6db6c111bbd739f88e93b64895ffa7df35))
 - **project:** add pydantic and ultralytics dependencies ([7bdaebc](https://github.com/DaoChaShao/py-yolo-basic/commit/7bdaebc686663e2d46b981a5f15ee6f76447ee1c))
 - add example.png file for text ([951aeca](https://github.com/DaoChaShao/py-yolo-basic/commit/951aeca09aca574da1601e99f6b7a6b479abb451))
