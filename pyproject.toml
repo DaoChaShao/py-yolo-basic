@@ -5,7 +5,10 @@ description = "A basic YOLO implementation in Python"
 authors = [{ name = "Shawn" }]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pydantic>=2.13.5",
+    "ultralytics>=8.4.132",
+]
 
 [tool.git-changelog]
 bump = "auto"
