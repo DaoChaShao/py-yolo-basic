@@ -3,6 +3,26 @@
   <a href="./README.zh-CN.md">🇨🇳 中文</a> | <a href="./README.md">🇬🇧 English</a>
 </p>
 
+**引用**
+---
+
+若在研究中使用了本数据集，请按以下格式引用：
+
+```bibtex
+@misc{mini-6es3r_dataset,
+  title = {mini Dataset},
+  type = {Open Source Dataset},
+  author = {arahwi},
+  howpublished = {\url{https://universe.roboflow.com/arahwi/mini-6es3r}},
+  url = {https://universe.roboflow.com/arahwi/mini-6es3r},
+  journal = {Roboflow Universe},
+  publisher = {Roboflow},
+  year = {2024},
+  month = {jun},
+  note = {visited on 2026-08-30},
+}
+```
+
 **隐私声明**
 ---
 
@@ -118,6 +138,7 @@
    # 或使用 uv 将其添加为开发依赖
    uv add git-changelog --group dev
    ```
+
 2. **验证安装**
    ```bash
    pip show git-changelog
