@@ -3,6 +3,26 @@
   <a href="./README.zh-CN.md">🇨🇳 中文</a> | <a href="./README.md">🇬🇧 English</a>
 </p>
 
+**Citation**
+---
+
+If you use this dataset in your research, please cite it as follows:
+
+```bibtex
+@misc{mini-6es3r_dataset,
+  title = {mini Dataset},
+  type = {Open Source Dataset},
+  author = {arahwi},
+  howpublished = {\url{https://universe.roboflow.com/arahwi/mini-6es3r}},
+  url = {https://universe.roboflow.com/arahwi/mini-6es3r},
+  journal = {Roboflow Universe},
+  publisher = {Roboflow},
+  year = {2024},
+  month = {jun},
+  note = {visited on 2026-08-30},
+}
+```
+
 **PRIVACY NOTICE**
 ---
 
