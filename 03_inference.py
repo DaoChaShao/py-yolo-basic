@@ -107,7 +107,7 @@ def inference_item(
 
 def main() -> None:
     """ Main Function """
-    image: Path = Path("data/images/example.png")
+    image: Path = Path("data/images/bus.png")
     print(image)
 
     model = load_pretrained_model("yolo26s.pt")
