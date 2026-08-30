@@ -5,6 +5,10 @@
 
 ### Features
 
+- add jog.png file ([70198a1](https://github.com/DaoChaShao/py-yolo-basic/commit/70198a14c499d11b5b5ed2362ec0638071f87b4e))
+- **yolo:** add YOLO classification module with device detection and inference wrapper ([3ff1e88](https://github.com/DaoChaShao/py-yolo-basic/commit/3ff1e88f4636a9d721e8981de4cbe793729f2d7f))
+- **pose:** add YOLO pose estimation implementation ([c2b8472](https://github.com/DaoChaShao/py-yolo-basic/commit/c2b8472ed8dafffaab4196f4b72a5b01b99896a8))
+- **model:** add pose estimation model types support ([6b7b57c](https://github.com/DaoChaShao/py-yolo-basic/commit/6b7b57c5dee35107b814d846c62f168552e93d7e))
 - **project:** initialize YOLO basic project with core dependencies and enhanced model loading ([dcac38d](https://github.com/DaoChaShao/py-yolo-basic/commit/dcac38d8bd5dbfc4cc58b90e7284fd13c42404da))
 - add crossroads.png file ([062e493](https://github.com/DaoChaShao/py-yolo-basic/commit/062e4937ef8d3f2a662629f8c14740000bbe0986))
 - **segmentation:** add YOLO segmentation implementation with device detection ([31fd248](https://github.com/DaoChaShao/py-yolo-basic/commit/31fd2482c3c4568a4f7e7c0fbb596dbc38289aa4))
@@ -24,6 +28,7 @@
 
 ### Chore
 
+- **changelog:** update changelog entries for project initialization and readme citations ([c59a5e6](https://github.com/DaoChaShao/py-yolo-basic/commit/c59a5e6cb95f58acf5d5fece392da4119fa1245b))
 - **datasets:** add .gitignore file for Python project ([1e079c9](https://github.com/DaoChaShao/py-yolo-basic/commit/1e079c91404ee0e1ea60657716532341d106bc17))
 - **config:** add .gitignore file for Python project ([d535f32](https://github.com/DaoChaShao/py-yolo-basic/commit/d535f326ea5f9829b6cfaa0f97726d08175ecdd8))
 - **data:** add .gitignore file for Python project ([f1266a3](https://github.com/DaoChaShao/py-yolo-basic/commit/f1266a3bf241fcb2a73f379f1bfaa9ff07f74f5f))
