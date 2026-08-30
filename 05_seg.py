@@ -19,6 +19,7 @@ def load_pretrained_model(
         model_type: Annotated[
             Union[str, Literal[
                 "yolo26n.pt", "yolo26s.pt", "yolo26m.pt", "yolo26l.pt", "yolo26x.pt",
+                "YOLO26n-pose", "YOLO26s-pose", "YOLO26m-pose", "YOLO26l-pose", "YOLO26x-pose",
                 "yolo26n-seg.pt", "yolo26s-seg.pt", "yolo26m-seg.pt", "yolo26l-seg.pt", "yolo26x-seg.pt",
             ]],
             Field(default="yolo26n.pt", description="The type of YOLO model to load")
