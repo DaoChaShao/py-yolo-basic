@@ -5,10 +5,10 @@
 
 ### Features
 
+- **project:** initialize YOLO basic project with core dependencies and enhanced model loading ([dcac38d](https://github.com/DaoChaShao/py-yolo-basic/commit/dcac38d8bd5dbfc4cc58b90e7284fd13c42404da))
 - add crossroads.png file ([062e493](https://github.com/DaoChaShao/py-yolo-basic/commit/062e4937ef8d3f2a662629f8c14740000bbe0986))
 - **segmentation:** add YOLO segmentation implementation with device detection ([31fd248](https://github.com/DaoChaShao/py-yolo-basic/commit/31fd2482c3c4568a4f7e7c0fbb596dbc38289aa4))
 - **models:** add transfer learning script for YOLO object detection ([4860b2f](https://github.com/DaoChaShao/py-yolo-basic/commit/4860b2f2130346c01ef407a3efb01f3660cfec81))
-- **project:** initialize YOLO basic project with core dependencies and enhanced model loading ([e26ca0c](https://github.com/DaoChaShao/py-yolo-basic/commit/e26ca0c572b689e9d6cfa27ed870a684b993cbc9))
 - **inference:** enhance YOLO model loading with task type support and extended model options ([b3e9054](https://github.com/DaoChaShao/py-yolo-basic/commit/b3e90543b29c587c101af56279f5e198d12ea316))
 - **project:** initialize YOLO basic project with core dependencies ([6010a19](https://github.com/DaoChaShao/py-yolo-basic/commit/6010a193c28ce44cc13e077ade01e422b8493d14))
 - add uv.lock file ([8fb62c6](https://github.com/DaoChaShao/py-yolo-basic/commit/8fb62c6db6c111bbd739f88e93b64895ffa7df35))
@@ -37,6 +37,8 @@
 
 ### Docs
 
+- **readme:** update dataset citation with link ([96ac7ad](https://github.com/DaoChaShao/py-yolo-basic/commit/96ac7ad972912e8c13628a2313e7f9510aa9340d))
+- **readme:** update dataset citation with linked reference ([5c49be9](https://github.com/DaoChaShao/py-yolo-basic/commit/5c49be9feb426c8d82cf090f040aa712af6136c4))
 - **readme:** add citation section and improve formatting ([477ccd7](https://github.com/DaoChaShao/py-yolo-basic/commit/477ccd7c166e0ae99109ef6dd50701685142f913))
 - **readme:** add citation section for dataset usage ([e19fd68](https://github.com/DaoChaShao/py-yolo-basic/commit/e19fd6813b381047edaa396987276860a5703a5e))
 - **readme:** add Chinese README with privacy policy and setup instructions ([7973300](https://github.com/DaoChaShao/py-yolo-basic/commit/7973300a24463e99275466410c27ee5f05ad6d51))
