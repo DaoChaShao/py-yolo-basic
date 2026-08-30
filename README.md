@@ -6,7 +6,7 @@
 **Citation**
 ---
 
-If you use this dataset in your research, please cite it as follows:
+If you use this [dataset](https://universe.roboflow.com/arahwi/mini-6es3r) in your research, please cite it as follows:
 
 ```bibtex
 @misc{mini-6es3r_dataset,
