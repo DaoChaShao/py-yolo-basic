@@ -6,7 +6,7 @@
 **引用**
 ---
 
-若在研究中使用了本数据集，请按以下格式引用：
+若在研究中使用了本[数据集](https://universe.roboflow.com/arahwi/mini-6es3r)，请按以下格式引用：
 
 ```bibtex
 @misc{mini-6es3r_dataset,
