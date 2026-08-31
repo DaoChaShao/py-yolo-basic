@@ -1,0 +1,15 @@
+path: ../py-yolo-basic/data/datasets/dirty_solar_panel
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: [ "dirty_solar_panel" ]
+
+roboflow:
+  workspace: arahwi
+  project: mini-6es3r
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/arahwi/mini-6es3r/dataset/2
