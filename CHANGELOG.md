@@ -5,6 +5,8 @@
 
 ### Features
 
+- export trained model solar.torchscript for solar panel detection ([ef299f3](https://github.com/DaoChaShao/py-yolo-basic/commit/ef299f393b204b7cebfd13be573d74fe5ea5b87f))
+- **yolo:** add comprehensive YOLO implementation with solar panel dataset support ([a492870](https://github.com/DaoChaShao/py-yolo-basic/commit/a492870df293a02e950c4e284db596a350369adc))
 - add solar panel data zip file ([8ddbcef](https://github.com/DaoChaShao/py-yolo-basic/commit/8ddbcef93c0fdef746631bf9d912f762fb5fc029))
 - **dataset:** add dirty solar panel dataset with annotations ([1fe5dab](https://github.com/DaoChaShao/py-yolo-basic/commit/1fe5dab5057638b0d497b4648169727f3066deef))
 - **yolo:** add comprehensive YOLO implementation with multiple modules ([105b86a](https://github.com/DaoChaShao/py-yolo-basic/commit/105b86ad1b3a374640fc4f1a4708b10cf729716a))
