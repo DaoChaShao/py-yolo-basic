@@ -210,7 +210,11 @@ class Yolo:
                 Field(default="cpu", description="The accelerator to use")
             ] = "cpu",
             *,
-            confidence: Annotated[float, Field(default=0.75, ge=0.25, lt=1.0)] = 0.50,
+            task_type: Annotated[
+                Union[str, Literal["detect", "prob"]],
+                Field(default="detect", description="The task type")
+            ] = "detect",
+            confidence: Annotated[float, Field(ge=0.25, lt=1.0)] = 0.50,
             is_save: bool = True,
             overwrite: bool = True,
             is_live: bool = False,
@@ -218,6 +222,7 @@ class Yolo:
         """
         Perform inference with a YOLO model on an image, a video, or a folder of images
 
+        :param task_type: The task type.
         :param accelerator: The accelerator to use for inference.
         :param confidence: The confidence threshold for the detections.
         :param is_save: Whether to save the inference results.
@@ -240,11 +245,17 @@ class Yolo:
             print("*" * 65)
             print(f"Results for {self._item}:")
             print("-" * 65)
-            self._print_dete_results(_results[0], self._model.names)
+            match task_type:
+                case "detect":
+                    self._print_detection(_results, self._model.names)
+                case "prob":
+                    self._print_probability(_results)
+                case _:
+                    raise ValueError(f"Unsupported task type: {task_type}")
             print("*" * 65)
 
     @validate_call
-    def _print_dete_results(
+    def _print_detection(
             self,
             results: Annotated[Any, Field(description="The results of the YOLO model")],
             names: Annotated[dict, Field(description="The names of the classes")],
@@ -254,20 +265,35 @@ class Yolo:
 
         :param results: The results of the YOLO model
         :param names: The names of the classes
-        :param display: Whether to display the results
         :return: None
         """
         if self._display:
-            if results.boxes is None or len(results.boxes) == 0:
+            if results[0].boxes is None or len(results[0].boxes) == 0:
                 print("No objects detected")
                 return
 
-            for i, box in enumerate(results.boxes):
+            for i, box in enumerate(results[0].boxes):
                 class_id: int = int(box.cls[0])
                 conf: float = float(box.conf[0])
                 coords: list = box.xyxy[0].tolist()
                 model_name: str = names.get(class_id, f"{class_id}")
                 print(f"Object {i + 1}: {model_name:16s} ({class_id}), Confidence: {conf:.4f}, Coordinates: {coords}")
+
+    @validate_call
+    def _print_probability(
+            self,
+            results: Annotated[Any, Field(description="The results of the YOLO model")],
+    ) -> None:
+        if self._display:
+            probs = results[0].probs
+            if probs is None:
+                print("No probability results available. Ensure the model supports classification.")
+                return
+
+            top_class = int(probs.top1)
+            top_confidence = float(probs.top1conf)
+            class_name = self._model.names.get(top_class, str(top_class))
+            print(f"Top class: {class_name} (ID: {top_class}), Confidence: {top_confidence:.4f}")
 
     def __enter__(self) -> Self:
         """ Enter the runtime context for the context manager. """
@@ -288,7 +314,7 @@ def main() -> None:
 
     model = load_pretrained_model("yolo26n-cls.pt", task_type="classify")
     with Yolo(model, bus, display=True) as yolo:
-        yolo.inference(detect_device())
+        yolo.inference(detect_device(), task_type="prob")
 
 
 if __name__ == "__main__":
