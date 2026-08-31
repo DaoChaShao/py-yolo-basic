@@ -5,6 +5,12 @@
 
 ### Features
 
+- **dataset:** add solar panel dataset configuration ([5904866](https://github.com/DaoChaShao/py-yolo-basic/commit/590486600707ebfd07dfd9284c83e396083c616f))
+- add quay.png file ([ef74969](https://github.com/DaoChaShao/py-yolo-basic/commit/ef7496945a727d1e1f5df0dceaf7904b9923d23b))
+- **yolo:** add YOLO model export functionality with device detection ([585c9fe](https://github.com/DaoChaShao/py-yolo-basic/commit/585c9feb0e7b36cf8e67691432e592be5df2606d))
+- **yolo:** add oriented bounding box detection module ([f01ef3c](https://github.com/DaoChaShao/py-yolo-basic/commit/f01ef3c0ab411b98ff97522dc725ad8191800202))
+- **yolo:** add task type support for detection and probability inference ([f13dbb9](https://github.com/DaoChaShao/py-yolo-basic/commit/f13dbb962f4f8d4333e894dc9088108dc545654c))
+- **yolo:** add comprehensive YOLO implementation with multiple modules ([3f576ee](https://github.com/DaoChaShao/py-yolo-basic/commit/3f576ee940bab3b925b269809489a3225cdb573c))
 - add jog.png file ([70198a1](https://github.com/DaoChaShao/py-yolo-basic/commit/70198a14c499d11b5b5ed2362ec0638071f87b4e))
 - **yolo:** add YOLO classification module with device detection and inference wrapper ([3ff1e88](https://github.com/DaoChaShao/py-yolo-basic/commit/3ff1e88f4636a9d721e8981de4cbe793729f2d7f))
 - **pose:** add YOLO pose estimation implementation ([c2b8472](https://github.com/DaoChaShao/py-yolo-basic/commit/c2b8472ed8dafffaab4196f4b72a5b01b99896a8))
